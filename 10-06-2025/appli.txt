@@ -1,0 +1,33 @@
+public class Application {
+    String Name;
+    String category;
+    int downloads;
+    String reviews;
+    public Application(String name,String category,int downloads,String reveiws ){
+        this.name=name;
+        this.category=category;
+        this.downloads=downloads;
+        this.reveiws=reveiws;
+    }
+    public void is_popular(){
+        if(downloads>=800){
+            System.out println("more popular");
+        }else if(downloads<900||downloads>500){
+            System.out.println("medium popular");
+        }else{
+            System.out.println("less popular");
+            }
+    }
+    public void get_summary(){
+        System.out.println("name:"+name);
+        System.out.println("category"+category);
+        System.out.println("downloads:"+downloads);
+        System.out.println("reviews"+reviews);
+    }
+    public class void main(String[] args){
+        Application app=new
+        Application("chatgpt","Ai tool",1000,"no reveiws");
+        app.is_popular();
+        app.get_summary();
+    }
+}
